@@ -1,0 +1,3 @@
+[submodule "lib/solvers/boolector"]
+	path = lib/solvers/boolector
+	url = https://github.com/Boolector/boolector.git

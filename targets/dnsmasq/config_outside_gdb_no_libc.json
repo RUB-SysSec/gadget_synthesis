@@ -1,0 +1,39 @@
+{
+	"executable": "dnsmasq_binary",
+	"arch": "x86_64",
+	"load_address" : "0x555555554000",
+	"libraries": [
+                ["libc", "../libraries/libc-2.31.so", "0x7ffff7a67000"]
+	],
+	"preconditions": [
+		["RSP", "0x7fffffffe138", 64],
+		["IRDst", "0x33dfb", 64],
+		["RAX", "0x223", 64],
+		["RBX", "0x4141414141414141", 64],
+		["RBP", "0x4141414141414141", 64],
+		["RCX", "0x0", 64],
+		["RDX", "0x5a", 64],
+		["RSI", "0x26", 64],
+		["RDI", "0x22", 64],
+		["R8", "0x7fffffffe0e0", 64],
+		["R9", "0x0", 64],
+		["R10", "0x7fffffffbc50", 64],
+		["R11", "0x4141414141414141", 64],
+		["R12", "0x4141414141414141", 64],
+		["R13", "0x4141414141414141", 64],
+		["R14", "0x4141414141414141", 64],
+		["R15", "0x4141414141414141", 64]
+	],
+	"postconditions": [
+		["IRDst",  "0x461d0", 64],
+		["RAX",  "0x3b", 64],
+		["RSI",  "0x0", 64],
+		["RDX",  "0x0", 64]
+	],
+	"ptr_postconditions": [
+		["RDI", "/bin/sh", 64]
+	],
+	"read_mem_areas": [["0x555555554000", "0x5555557a3000"]],
+	"write_mem_areas": [["0x00007ffffffde000", "0x00007ffffffff000"]]
+  }
+

@@ -1,0 +1,24 @@
+{
+    "executable": "./bin/chromium",
+    "arch": "x86_64",
+    "load_address" : "0x555555554000",
+    "libraries": [
+                    ["libc", "../libraries/libc-2.31.so", "0x7ffff33f1000"]
+    ],
+    "preconditions": [
+                      ["RSP", "0x00007fffffffe498", 64],
+                      ["IRDst", "0x9f50802", 64]
+                    ],
+    "postconditions": [
+                      ["IRDst", "0x7ffff350ca20", 64],
+                      ["RDI", "0x00007fffffffe0a8", 64],
+                      ["RSI", 1024, 64],
+                      ["RDX", "0x7b", 64],
+                      ["RCX", "0x20", 64],
+                      ["R8", "0xffffffffffffffff", 64],
+                      ["R9", 16, 64]
+                  ],
+    "read_mem_areas": [["0x400000", "0x4a8000"]],
+    "write_mem_areas": [["0x7ffffffde000", "0x7ffffffff000"]]
+  }
+  

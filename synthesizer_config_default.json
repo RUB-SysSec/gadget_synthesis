@@ -1,0 +1,17 @@
+{
+    "all_iterations": [4],
+    "solver": "boolector",
+    "block_limits": [100, 300],
+    "restrict_mem": true,
+    "disassemble_unaligned": false,
+    "selection_strategy": "seed",
+    "selection_location": "main_exe",
+    "control_flow_types": ["ret", "call", "jmp"],
+    "initial_seed": 0,
+    "initial_block_offset": 0,
+    "max_selection_variations": 2,
+    "all_max_stack_words": [16],
+    "solver_timeout": 3600,
+    "disassembly_timeout": 3600
+  }
+

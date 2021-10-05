@@ -1,0 +1,14 @@
+# Build directory
+/build/*
+# Emacs files
+*~
+# Compiled python files
+*\.pyc
+# mypy / code
+.vscode
+.mypy_cache
+
+# other
+__pycache__
+*.egg-info
+*.so

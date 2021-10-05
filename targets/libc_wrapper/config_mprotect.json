@@ -1,0 +1,21 @@
+{
+    "executable": "./libc_wrapper",
+    "arch": "x86_64",
+    "load_address" : "0x000000",
+    "libraries": [],
+    "force_code_locations": [],
+    "preconditions": [
+                      ["RSP", "0x00007fffffffe638", 64],
+                      ["IRDst", "0x4017a6", 64]
+                    ],
+    "postconditions": [
+                      ["IRDst", "0x43fbc0", 64],
+                      ["RDI", "0x356a4", 64],
+                      ["RSI", 64, 64],
+                      ["RDX", "0x7b", 64]
+                  ],
+    "read_mem_areas": [["0x400000", "0x4a8000"]],
+    "write_mem_areas": [["0x7ffffffde000", "0x7ffffffff000"]]
+  }
+  
+  

@@ -1,0 +1,24 @@
+{
+	"executable": "dnsmasq_binary",
+	"arch": "x86_64",
+	"load_address" : "0x555555554000",
+	"libraries": [
+                ["libc", "../libraries/libc-2.31.so", "0x7ffff7a67000"]
+	],
+	"preconditions": [
+		["RSP", "0x7fffffffe0e8", 64],
+		["IRDst", "0x9c91", 64]
+	],
+	"postconditions": [
+		["IRDst",  "0x55555559a1d0", 64],
+		["RAX",  "0x3b", 64],
+		["RSI",  "0x0", 64],
+		["RDX",  "0x0", 64]
+	],
+	"ptr_postconditions": [
+		["RDI", "/bin/sh", 64]
+	],
+	"read_mem_areas": [["0x0", "0x24f000"]],
+	"write_mem_areas": [["0x00007ffffffde000", "0x00007ffffffff000"]]
+  }
+

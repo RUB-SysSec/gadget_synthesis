@@ -1,0 +1,13 @@
+# install SMT solvers
+-r ./lib/solvers/requirements.txt
+-e ./lib/solvers
+
+# install submodule miasm
+-r ./lib/miasm/requirements.txt
+-e ./lib/miasm/
+
+# other dependencies
+z3-solver==4.8.10
+multiprocessing-logging==0.3.1
+msgpack==1.0.2
+

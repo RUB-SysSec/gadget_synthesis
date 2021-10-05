@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache
+
+# IDE
+.idea/
+*.cbp
+.vscode
+
+# Logfiles
+*.log
+
+# Virtual environments
+*-env
+
+# Docker shell histories
+docker_data/*_history
+
+# Other
+build
+dist
+*.egg-info

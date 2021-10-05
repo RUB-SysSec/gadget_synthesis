@@ -1,0 +1,13 @@
+{
+    "all_iterations": [5],
+    "solver": "/usr/bin/boolector",
+    "block_limits": [300, 400, 500, 600],
+    "restrict_mem": true,
+    "disassemble_unaligned": false,
+    "selection_strategy": "seed",
+    "initial_seed": 1337,
+    "initial_block_offset": 0,
+    "max_selection_variations": 0,
+    "all_max_stack_words": [16]
+  }
+
