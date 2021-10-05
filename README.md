@@ -8,7 +8,7 @@ Check out the [paper](https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffen
     author = {Moritz Schloegel and Tim Blazytko and Julius Basler and Fabian Hemmer and Thorsten Holz},
     title = {Towards Automating Code-Reuse Attacks Using Synthesized Gadget Chains},
     year = {2021},
-    booktitle =  {TODO},
+    booktitle =  {European Symposium on Research in Computer Security},
 }
 ```
 
@@ -23,10 +23,10 @@ What SGC can do - a non-exhaustive list:
 
 
 # Installation
-We strongly recommend to use the provided docker or at least a virtual environment. We install our customized Miasm (included as submodule) and this package to provide easy access to the APIs. To build:
+We strongly recommend to use the provided docker or at least a virtual environment. We install our customized Miasm and this package to provide easy access to the APIs. To build:
 ```
 git@github.com:RUB-SysSec/gadget_synthesis.git
-cd synthesizer
+cd gadget_synthesis
 git submodule init
 git submodule update --init --recursive --rebase
 
