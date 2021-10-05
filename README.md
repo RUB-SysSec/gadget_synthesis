@@ -8,7 +8,7 @@ Check out the [paper](https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffen
     author = {Moritz Schloegel and Tim Blazytko and Julius Basler and Fabian Hemmer and Thorsten Holz},
     title = {Towards Automating Code-Reuse Attacks Using Synthesized Gadget Chains},
     year = {2021},
-    booktitle =  {European Symposium on Research in Computer Security},
+    booktitle = {European Symposium on Research in Computer Security},
 }
 ```
 
