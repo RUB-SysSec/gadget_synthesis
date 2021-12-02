@@ -3,7 +3,11 @@
 -e ./lib/solvers
 
 # install submodule miasm
--r ./lib/miasm/requirements.txt
+# Due to breaking changes in pyparsing (2.x -> 3.x)
+# we manually pin Miasm's dependencies
+future==0.18.2
+pyparsing==2.0
+# -r ./lib/miasm/requirements.txt
 -e ./lib/miasm/
 
 # other dependencies
