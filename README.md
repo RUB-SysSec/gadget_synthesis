@@ -40,7 +40,7 @@ cd -
 python3 -m pip install --user -r requirements.txt
 python3 -m pip install -e .
 ```
-
+If using an existing install of Boolector (instead of building from source as proposed above), please ensure its version is 3.2.2 (or newer). Older versions may not work as expected.
 
 ## Virtual Environment
 Requires: `python3-venv`
